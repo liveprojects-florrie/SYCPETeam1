@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* Setting the margin to 0 and creating a font 
+        family so that all text is the same font.*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F0F0;
+    position: relative;
+}
+
+article {
+    width: 80%;
+    margin: 0px;
+    top: 0;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 4em 2%;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+article p {
+    font-size: 1em;
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    bottom: 0;
+    padding: 0.2em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer h1 {
+    font-size: 1em;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #252525F2;
+    position: fixed;
+    width: 100%;
+    /*The navigation bar requires the overflow value to be hidden
+        so that everything that would normally overflow becomes hidden
+        to make the navigation bar look nicer
+    */
+}
+
+nav h1 {
+    float: left;
+    color: #f5f5f5;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color: #f5f5f5;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*The a tag is for hyperlinks and the float is set to the left
+        so that each button on the navigation bar are next to each other
+        and are displayed in blocks to look good.
+    */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#images{
+    text-align:center;
+    margin:50px auto; 
+}
+#images a{
+    margin:0px 20px;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+ }
+
+@media (max-width:800px) {
+    /*This is a media query which decreases the size of everything
+        so that it doesn't go off of the screen if the user is using
+        a different device such as a phone or tablet that has a
+        smaller screen instead of a computer.
+    */
+    nav a {
+        display: block;
+        margin-left: auto;
+    }
+    #container {
+        width: auto;
+    }
+    article {
+        width: 80%;
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 4em 2%;
+    }
+}
